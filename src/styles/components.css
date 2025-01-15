@@ -1,0 +1,102 @@
+/* Button Styles */
+.btn-primary {
+  @apply px-6 py-2 bg-accent text-white rounded-lg font-medium 
+         hover:bg-accent/90 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-secondary text-gray-800 rounded-lg font-medium 
+         hover:bg-secondary/90 transition-colors duration-200;
+}
+
+.filter-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-200
+         hover:shadow-md active:scale-95;
+}
+
+/* Input Styles */
+.retro-input {
+  @apply px-4 py-2 border-2 border-gray-300 rounded-lg 
+         focus:border-accent focus:outline-none transition-colors
+         font-permanent text-lg;
+}
+
+/* Card Styles */
+.polaroid {
+  @apply bg-white p-4 shadow-lg transform transition-all duration-200
+         hover:shadow-xl hover:scale-[1.02];
+}
+
+/* Frame Styles */
+.frame {
+  @apply p-2 bg-white shadow-md;
+}
+
+.frame-classic {
+  @apply border-8 border-white;
+}
+
+.frame-pastel {
+  @apply border-8 border-primary;
+}
+
+.frame-mint {
+  @apply border-8 border-secondary;
+}
+
+.frame-doodle {
+  @apply border-8 border-accent border-dashed;
+}
+
+/* Image Container */
+.image-container {
+  @apply relative pb-[100%] overflow-hidden bg-gray-100;
+}
+
+.image-container img {
+  @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+/* Animation Classes */
+.fade-in {
+  @apply opacity-0 animate-fadeIn;
+}
+
+.slide-up {
+  @apply translate-y-4 opacity-0 animate-slideUp;
+}
+
+/* Layout Utilities */
+.page-container {
+  @apply flex flex-col items-center space-y-8 p-4;
+}
+
+.content-section {
+  @apply w-full max-w-2xl mx-auto;
+}
+
+.grid-gallery {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Typography */
+.title-large {
+  @apply text-4xl font-vt323 text-center;
+}
+
+.title-medium {
+  @apply text-2xl font-permanent text-center;
+}
+
+.caption-text {
+  @apply text-lg font-permanent text-gray-800;
+}
+
+/* Effects */
+.hover-lift {
+  @apply transition-transform duration-200 hover:scale-105;
+}
+
+.hover-glow {
+  @apply transition-all duration-200 hover:shadow-lg hover:shadow-accent/20;
+}

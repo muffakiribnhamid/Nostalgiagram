@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@400;500;600&family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textDark font-inter;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-vt323;
+  }
+}
+
+@layer components {
+  .polaroid {
+    @apply bg-white p-4 shadow-lg transform transition-transform hover:rotate-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-opacity-80 text-textDark px-6 py-2 rounded-lg 
+           transition-all duration-300 font-vt323 text-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-opacity-80 text-textDark px-6 py-2 rounded-lg 
+           transition-all duration-300 font-vt323 text-lg;
+  }
+  
+  .filter-button {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-300
+           hover:scale-105 active:scale-95;
+  }
+  
+  .retro-input {
+    @apply border-2 border-primary rounded-lg px-4 py-2 focus:outline-none
+           focus:border-accent transition-colors duration-300;
+  }
+}
